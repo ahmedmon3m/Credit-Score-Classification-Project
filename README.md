@@ -42,11 +42,9 @@ This project uses machine learning to classify individuals' credit scores as **G
 
 | Model               | Accuracy |
 |---------------------|----------|
-| Logistic Regression | 88%      |
-| Random Forest       | 91%      |
-| XGBoost             | 92%      |
+| XGBoost             | 97%      |
 
-**Best Model**: ✅ XGBoost with 92% accuracy
+**Best Model**: ✅ XGBoost with 97% accuracy
 
 ---
 
