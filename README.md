@@ -15,26 +15,26 @@ This project uses machine learning to classify individuals' credit scores as **G
 ## 🚀 Project Workflow
 
 ### 🔹 1. Data Understanding
-- Data loaded and cleaned from CSV
-- Columns reviewed for nulls, types, and outliers
+- Loaded dataset and explored structure
+- Handled nulls, outliers, and data types
 
 ### 🔹 2. Data Preprocessing
-- Handled missing values
-- Label Encoding for categorical features
-- Feature scaling using `StandardScaler`
-- Converted target variable into multi-class format
+- Filled missing values
+- Encoded categorical features
+- Scaled numeric columns using `StandardScaler`
+- Converted target to multi-class format
 
 ### 🔹 3. Model Building
-- Used classification models:
+- Trained multiple classifiers:
   - Logistic Regression
-  - Random Forest Classifier
+  - Random Forest
   - XGBoost
-- Performed train/test split and evaluated accuracy
+- Chose best model based on accuracy
 
 ### 🔹 4. Evaluation Metrics
 - Accuracy Score
 - Confusion Matrix
-- Classification Report (Precision, Recall, F1)
+- Classification Report
 
 ---
 
@@ -44,13 +44,15 @@ This project uses machine learning to classify individuals' credit scores as **G
 |---------------------|----------|
 | XGBoost             | 97%      |
 
-**Best Model**: ✅ XGBoost with 97% accuracy
+✅ **Best Model**: XGBoost
 
 ---
 
-## 🛠️ Requirements
+## 🖥️ Streamlit App
 
-Install dependencies via:
+We built an interactive web interface using Streamlit to predict credit score classes based on user input.
+
+### ▶️ Run Locally
 
 ```bash
-pip install -r requirements.txt
+streamlit run app.py
